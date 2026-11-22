@@ -92,6 +92,93 @@
         </div>
         <a class="button button-dark" href="https://wa.me/522292089687?text=Hola%2C%20quiero%20agendar%20una%20cita%20en%20BLOOM%C3%89." target="_blank" rel="noopener">Reservar por WhatsApp <span>↗</span></a>
       </div>
+      <!-- VISTA PREVIA TAREA 5: PRE-AGENDA DE CITAS -->
+<div class="bloome-preview-box" style="margin-top: 2.5rem; padding: 1.75rem; border-radius: 16px; background: #fff9fa; border: 1.5px dashed #d8a7b1; max-width: 540px;">
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+    <span style="background: #fce4ec; color: #880e4f; font-size: 0.75rem; font-weight: 700; padding: 0.3rem 0.75rem; border-radius: 999px; letter-spacing: 0.04em; text-transform: uppercase;">
+      ✿ Función en desarrollo
+    </span>
+    <span style="font-size: 0.8rem; color: #6d6d6d;">Próximamente con Supabase Auth</span>
+  </div>
+
+  <h3 style="margin: 0 0 0.4rem 0; font-size: 1.25rem; color: #2b2b2b;">Pre-reserva tu cita en línea</h3>
+  <p style="margin: 0 0 1.25rem 0; font-size: 0.9rem; color: #555;">
+    Vista previa del próximo módulo: podrás crear tu cuenta, elegir tu servicio y guardar tu solicitud antes de confirmar por WhatsApp.
+  </p>
+
+  <form onsubmit="event.preventDefault();" style="display: grid; gap: 0.9rem;">
+    <div>
+      <label for="prev-email" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem;">Correo electrónico *</label>
+      <input id="prev-email" type="email" placeholder="tu.correo@ejemplo.com" style="width: 100%; padding: 0.6rem 0.75rem; border: 1px solid #e0c3c9; border-radius: 8px; box-sizing: border-box;">
+    </div>
+
+    <div>
+      <label for="prev-nombre" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem;">Nombre o alias *</label>
+      <input id="prev-nombre" type="text" placeholder="Ej. Jimena" style="width: 100%; padding: 0.6rem 0.75rem; border: 1px solid #e0c3c9; border-radius: 8px; box-sizing: border-box;">
+    </div>
+
+    <div>
+      <label for="prev-servicio" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem;">Servicio deseado *</label>
+      <select id="prev-servicio" style="width: 100%; padding: 0.6rem 0.75rem; border: 1px solid #e0c3c9; border-radius: 8px; background: #fff; box-sizing: border-box;">
+        <option value="">Selecciona un servicio...</option>
+        <option>Retiro — $50 MXN</option>
+        <option>Gel liso — $180 MXN</option>
+        <option>Promo 2 × $300 en Gel liso</option>
+        <option>Gel con diseño — $200 MXN</option>
+        <option>Rubber con gel — $250 MXN</option>
+        <option>Nivelación — $200 MXN</option>
+        <option>Softgel liso — $350 MXN</option>
+        <option>Softgel con diseño — $380 MXN</option>
+        <option>Lifting de pestañas — $300 MXN</option>
+      </select>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+      <div>
+        <label for="prev-fecha" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem;">Fecha deseada *</label>
+        <input id="prev-fecha" type="date" style="width: 100%; padding: 0.6rem 0.75rem; border: 1px solid #e0c3c9; border-radius: 8px; box-sizing: border-box;">
+      </div>
+      <div>
+        <label for="prev-hora" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem;">Horario (4 a 8 p. m.) *</label>
+        <select id="prev-hora" style="width: 100%; padding: 0.6rem 0.75rem; border: 1px solid #e0c3c9; border-radius: 8px; background: #fff; box-sizing: border-box;">
+          <option>4:00 p. m.</option>
+          <option>5:00 p. m.</option>
+          <option>6:00 p. m.</option>
+          <option>7:00 p. m.</option>
+          <option>8:00 p. m.</option>
+        </select>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+      <div>
+        <label for="prev-modalidad" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem;">Modalidad *</label>
+        <select id="prev-modalidad" style="width: 100%; padding: 0.6rem 0.75rem; border: 1px solid #e0c3c9; border-radius: 8px; background: #fff; box-sizing: border-box;">
+          <option>En estudio</option>
+          <option>A domicilio (+ costo extra)</option>
+        </select>
+      </div>
+      <div>
+        <label for="prev-estilo" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem;">Inspiración (opcional)</label>
+        <select id="prev-estilo" style="width: 100%; padding: 0.6rem 0.75rem; border: 1px solid #e0c3c9; border-radius: 8px; background: #fff; box-sizing: border-box;">
+          <option>Sin preferencia</option>
+          <option>Francesas</option>
+          <option>Rosas</option>
+          <option>Rojas</option>
+          <option>Azules</option>
+          <option>Diseño personalizado</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="button" disabled style="margin-top: 0.4rem; padding: 0.75rem 1rem; border: none; border-radius: 999px; background: #d8a7b1; color: #fff; font-weight: 600; cursor: not-allowed; opacity: 0.85;">
+      Guardar pre-reserva (Disponible en la siguiente entrega)
+    </button>
+    <small style="color: #777; font-size: 0.78rem; text-align: center;">
+      * Vista previa visual: este formulario aún no almacena datos reales. Para agendar hoy, usa el botón de WhatsApp.
+    </small>
+  </form>
+</div>
     </section>
   </main>
 
